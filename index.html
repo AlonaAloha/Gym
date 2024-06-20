@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Cork Docklands Gym" />
+    <meta name="description" content="Cork Docklands Gym" />
+    <meta name="author" content="Alona I." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cork Docklands Gym</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/bmi.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/join.css" />
+    <link rel="stylesheet" href="src/classes.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav__logo">
+        <a href="#"><img src="images/logo2.png" alt="logo" /></a>
+      </div>
+      <ul class="nav__links">
+        <li class="link"><a href="index.html">Home</a></li>
+        <li class="link"><a href="./pages/membership.html">Memberships</a></li>
+        <li class="link"><a href="./pages/classes.html">Classes</a></li>
+      </ul>
+      <button class="btnLogin-popup">Join</button>
+    </nav>
+    <div class="wrapper wrapper-alert">
+      <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+
+      <div class="form-box login">
+        <h2>Join</h2>
+        <form action="#">
+          <div class="wrapper-form">
+            <div>
+              <div class="input-box">
+                <span class="icon"
+                  ><ion-icon name="people-outline"></ion-icon
+                ></span>
+                <input type="text" required name="name" />
+                <label>Name</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="call"></ion-icon></span>
+                <input type="tel" required name="tel" pattern="[0-9]*" />
+                <label>Phone</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="id-card"></ion-icon></span>
+                <input type="text" required name="id-card" />
+                <label>Mobile</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required name="mail" />
+                <label>Email</label>
+              </div>
+            </div>
+
+            <div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="calendar"></ion-icon></span>
+                <input type="text" required name="calendar" />
+                <label>Age</label>
+              </div>
+              <div class="input-box">
+                <select required name="gender">
+                  <option value="" disabled selected>Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+
+                <span class="icon-box">
+                  <ion-icon name="transgender"></ion-icon
+                ></span>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="briefcase"></ion-icon></span>
+                <input type="text" required name="staff" />
+                <label>Medical Condition</label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn-main">Submit</button>
+        </form>
+      </div>
+    </div>
+    <header class="section__container header__container">
+      <div class="header__content">
+        <span class="bg__blur"></span>
+        <span class="bg__blur header__blur"></span>
+        <h4>CORK DOCKLANDS GYM</h4>
+        <h2><span>MAKE</span> YOUR BODY SHAPE</h2>
+        <p>
+          Cork Docklands Gym strive to create a peaceful and relaxing
+          environment in which its members can work out and realise and achieve
+          their fitness and wellness goals. Our gym has the most up-to-date
+          technology to ensure you are getting the most from your workouts. Our
+          100-station gym uses the world renowned TechnoGym technology, with its
+          evolutionary Key System, which stores individual programmes and
+          workout history on a personal Techno gym key.
+        </p>
+        <button
+          class="class__btn"
+          onclick="location.href='./pages/membership.html'"
+        >
+          Get Started
+        </button>
+      </div>
+      <div class="header__image">
+        <img src="images/header.png" alt="header" />
+      </div>
+    </header>
+    <main>
+      <section class="section__container explore__container">
+        <div class="explore__header">
+          <h2 class="section__header">EXPLORE OUR GYM</h2>
+        </div>
+        <div class="explore__grid">
+          <div class="explore__image">
+            <span><img src="images/coffee.jpg" alt="coffe" /></span>
+            <p>
+              <b class="im">Café Revive</b><br /><br />
+              An onsite coffee shop. Grab a coffee and a snack before or after
+              your workout. A selection of healthy food and drinks are
+              available. Be social!
+            </p>
+          </div>
+          <div class="explore__image">
+            <span><img src="images/multimediaroom.jpg" alt="staff" /></span>
+            <p>
+              <b class="im">Multimediaroom</b> <br />
+              Cork’s Sporting Heros Multimedia Room: A multimedia room open to
+              gym members only. Contains video, audio and memorabilia of some of
+              Cork’s most famous sports stars including Roy Keane, Denis Irwin,
+              Sonia O’Sullivan, Christy Ring and Ronan O’Gara.
+            </p>
+          </div>
+          <div class="explore__image">
+            <span><img src="images/swimming1.jpg" alt="swimming1" /></span>
+            <p>
+              <b class="im">Swimming Pool</b> <br /><br />
+              Our 18-metre pool is kept at a constant, comfortable temperature
+              with a dedicated swim lane. After your swim, why not relax in our
+              Jacuzzi, sauna, steam room or spa pool.
+            </p>
+          </div>
+          <div class="explore__image">
+            <span><img src="images/gym.jpg" alt="gym" /></span>
+            <p>
+              <b class="im">Cutting-Edge Technology</b><br />
+              Our gym has the most up-to-date technology to ensure you are
+              getting the most from your workouts. Our 100-station gym uses the
+              world renowned TechnoGym technology, with its evolutionary Key
+              System, which stores individual programmes and workout history on
+              a personal Techno gym key.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section__container class__container">
+        <div class="class__image">
+          <img
+            src="images/kettlebell.jpg"
+            alt="kettlebell"
+            class="class__img-1"
+          />
+        </div>
+        <div class="class__content">
+          <h2 class="section__header">OUR CLASSES</h2>
+          <p>
+            Each week, we offer a variety of fitness, swimming, and wellbeing
+            classes. You will get here a high-energy, results-driven session
+            that combines a perfect blend of cardio, strength training, and
+            functional exercises.
+          </p>
+          <button
+            class="class__btn"
+            onclick="location.href='./pages/classes.html'"
+          >
+            Explore Our Classes
+          </button>
+        </div>
+      </section>
+      <section class="section__container join__container">
+        <h2 class="section__header">WHY OUR GYM ?</h2>
+        <p class="section__subheader">
+          Our staff is highly qualified, and with their motivation and
+          expertise, will help you to achieve your fitness and wellness goals.
+          Our diverse membership base creates a friendly and supportive
+          atmosphere, where you can make friends and stay motivated.
+        </p>
+        <div class="join__image">
+          <img src="images/staff3.jpg" alt="Join" />
+          <div class="join__grid">
+            <div class="join__card">
+              <span><i class="ri-user-star-fill"></i></span>
+              <div class="join__card__content">
+                <h4>Personal Trainer</h4>
+                <p>Unlock your potential with our expert Personal Trainers.</p>
+              </div>
+            </div>
+            <div class="join__card">
+              <span><i class="ri-vidicon-fill"></i></span>
+              <div class="join__card__content">
+                <h4>Practice Sessions</h4>
+                <p>Elevate your fitness with practice sessions.</p>
+              </div>
+            </div>
+            <div class="join__card">
+              <span><i class="ri-building-line"></i></span>
+              <div class="join__card__content">
+                <h4>Good Management</h4>
+                <p>Supportive management, for your fitness success.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__container">
+        <h2 class="section__header">OUR PRICING PLAN</h2>
+        <p class="section__subheader">
+          Our pricing plan comes with various membership tiers, each tailored to
+          cater to different preferences and fitness aspirations.
+        </p>
+        <div class="price__grid">
+          <div class="price__card">
+            <div class="price__card__content">
+              <h4>Classic Membership</h4>
+              <h3>€890</h3>
+              <p>Monthly Fee: €80</p>
+              <p>Initial Fitness Assessment.</p>
+              <p>Re-Assessments (4 per year).</p>
+              <p>
+                Discount on the price of Fitness Classes (20% off standard
+                rate).
+              </p>
+            </div>
+            <button class="btn price__btn">Join Now</button>
+          </div>
+          <div class="price__card">
+            <div class="price__card__content">
+              <h4>Gold Membership</h4>
+              <h3>€1200</h3>
+              <p>Monthly Fee: €100</p>
+              <p>Initial Fitness Assessment.</p>
+              <p>Re-assessments (4 per year).</p>
+              <p>Fitness Classes (free)</p>
+              <p>Personal Training (1 session per month for 45 Minutes)</p>
+              <p>Gym towel on arrival (on request)</p>
+            </div>
+            <button class="btn price__btn">Join Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="review">
+        <div class="section__container">
+          <span><i class="ri-double-quotes-r"></i></span>
+          <div class="review__content">
+            <h4>MEMBER REVIEW</h4>
+            <p id="reviewerText"></p>
+            <div class="review__rating"></div>
+            <div class="review__footer">
+              <div class="review__member">
+                <img id="reviewImgPerson" src="" alt="member" />
+                <div class="review__member__details">
+                  <h4 id="reviewName"></h4>
+                  <p id="reviewOccupation"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="section__container footer__container">
+      <span class="bg__blur"></span>
+      <span class="bg__blur footer__blur"></span>
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#"><img src="images/logo2.png" alt="logo" /></a>
+        </div>
+        <p>
+          "Empowering You to Reach New Heights of Fitness, Health, and
+          Confidence, One Rep at a Time - Join Our Community, Where Every Step
+          Towards Your Goals is Supported, Encouraged, and Celebrated!"
+        </p>
+        <div class="footer__socials">
+          <a href="#"><img src="images/facebook.png" alt="facebook" /></a>
+          <a href="#"><img src="images/youtube.png" alt="youtube" /></a>
+          <a href="#"><img src="images/instagram.png" alt="instagram" /></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#">Business</a>
+        <a href="#">Franchise</a>
+        <a href="#">Partnership</a>
+        <a href="#">Network</a>
+      </div>
+      <div class="footer__col">
+        <h4>About Us</h4>
+        <a href="#">Blogs</a>
+        <a href="#">Security</a>
+        <a href="#">Careers</a>
+        <a href="#">BMI Calculator</a>
+      </div>
+      <div class="footer__col">
+        <h4>Working Hours</h4>
+        <p>
+          Monday - Friday<br />
+          6:00AM - 9:00PM<br />
+          Saturday - Sunday<br />
+          8:00AM - 9:00PM
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </footer>
+    <div id="wrapper-container">
+      <span class="icon-close">
+        <ion-icon name="close"></ion-icon>
+      </span>
+      <div class="box-container">
+        <h1>BMI Calculator</h1>
+        <div class="content">
+          <div class="input">
+            <label for="height">Age</label>
+            <input
+              type="text"
+              class="text-input"
+              id="age"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="gender">
+            <label class="container">
+              <input type="radio" name="radio" id="m" />
+              <p class="text">Male</p>
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container">
+              <input type="radio" name="radio" id="f" />
+              <p class="text">Female</p>
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="containerHW">
+            <div class="inputH">
+              <label for="height">Height(cm)</label>
+              <input type="number" id="height" required />
+            </div>
+
+            <div class="inputW">
+              <label for="weight">Weight(kg)</label>
+              <input type="number" id="weight" required />
+            </div>
+          </div>
+          <button class="calculate" id="submit" onclick="calculate();">
+            Calculate BMI
+          </button>
+        </div>
+        <div class="result">
+          <p>Your BMI is</p>
+          <div id="result">00.00</div>
+          <p class="comment"></p>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">©Cork Gym Project 2024</div>
+
+    <script src="./js/js.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/bmi.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
