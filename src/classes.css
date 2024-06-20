@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #111317;
+  --primary-color-light: #1f2125;
+  --primary-color-extra-light: #35373b;
+  --secondary-color: #f9ac54;
+  --secondary-color-dark: #d79447;
+  --text-light: #d1d5db;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.section__classes {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+}
+
+.section__classes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/gymBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.4);
+  z-index: -1;
+  backdrop-filter: blur(8px); /* Adjust blur intensity as needed */
+}
+
+.div__header {
+  padding: 2.5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 20px 10px 10px rgb(24, 23, 23);
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--text-light);
+  text-shadow: 0px 0px 5px var(--primary-color);
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 1rem;
+  width: 30%;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-size: 1rem;
+}
+
+button:hover {
+  transform: translateY(-10%) scale(1.2);
+  background-color: #9f9f9f;
+  box-shadow: 0 8px 15px var(--white);
+  box-shadow: 0 8px 15px var(--text-light);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--secondary-color);
+  transition: 1.2s ease;
+  box-shadow: 0 0 0 3px var(--secondary-color);
+}
+
+.section__class__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 95%;
+  margin: auto;
+}
+
+.div__images {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "tall small1"
+    "tall small2";
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.image_container:hover {
+  transform: translateY(-3%);
+  transition: 0.3s ease;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px 1px var(--text-light);
+}
+
+.div__images .image_container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.div__images .image_text {
+  position: absolute;
+  display: inline-block;
+  top: 1px;
+  left: 15px;
+  color: var(--primary-color);
+  text-shadow: 0px 0px 5px var(--text-light);
+  font-size: 1rem;
+  width: 75%;
+  margin: 1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.div__images .tall {
+  grid-area: tall;
+}
+
+.div__images .small:nth-of-type(2) {
+  grid-area: small2;
+}
+
+.div__images img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 25px;
+  border: 2px solid var(--primary-color);
+}
+
+.container_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+video {
+  width: 90%;
+  border-radius: 50px;
+  margin-top: 5rem;
+}
+
+.info_pool {
+  position: absolute;
+  text-align: center;
+  text-shadow: 2px 5px 5px var(--primary-color-extra-light);
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  max-width: 100%;
+  margin: auto;
+  padding: 150px;
+}
+
+.sauna_and_jacuzzi img {
+  max-width: 100%;
+  border-radius: 50px;
+  height: 80%;
+}
+
+.sauna_and_jacuzzi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  max-width: 90%;
+}
+
+.jacuzzi:hover,
+.sauna:hover {
+  transform: translateY(-10px);
+  transition: 0.7s ease;
+}
+
+.bg__blur {
+  position: absolute;
+  box-shadow: 0 0 1000px 100px var(--secondary-color);
+  z-index: -2;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.image-container {
+  position: relative;
+  width: 100%; /* Adjust width as needed */
+  height: 600px; /* Adjust height as needed */
+}
+
+.image-container:hover {
+  transform: translateY(-5%);
+  transition: 1s ease;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.text-overlay h2 {
+  margin: 0 0 10px 0;
+  font-size: 40px;
+}
+
+.text-overlay p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.footer__container {
+  border-top: 1px solid var(--text-light);
+  position: relative;
+  display: grid;
+  grid-template-columns: 500px repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer__blur {
+  bottom: 0;
+  right: 0;
+}
+
+.footer__logo {
+  max-width: 50px;
+  margin-bottom: 2rem;
+}
+
+.footer__col p {
+  margin-bottom: 2rem;
+  color: var(--text-light);
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__socials a {
+  padding: 5px 5px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 100%;
+  transition: 0.2s;
+}
+
+.footer__socials a:hover {
+  color: var(--white);
+  background-color: var(--secondary-color);
+  transition: 0.5s;
+  transform: translateY(-15%);
+}
+
+.footer__col h4 {
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.footer__col > a {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  transition: 1s;
+}
+
+.footer__col > a:hover {
+  color: var(--secondary-color);
+  transition: 0.5s;
+  transform: translateY(-5%);
+}
+
+.footer__bar {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: var(--white);
+}
+
+.footer__socials img,
+.footer__logo img {
+  width: 100%;
+  display: flex;
+}
+
+/* tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .image_container img {
+    width: 100%;
+    height: 75%;
+  }
+
+  .section__class__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 95%;
+    margin: auto;
+  }
+
+  .sauna_and_jacuzzi {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    max-width: 100%;
+  }
+
+  .info2 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .div__images {
+    display: flex;
+  }
+
+  .review__container {
+    gap: 2rem;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr 200px;
+  }
+}
+
+/* mobile */
+@media (max-width: 599px) {
+  .section__class__container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .div__images {
+    grid-template-areas:
+      "tall"
+      "small1"
+      "small2";
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .div__images .image_container {
+    overflow: hidden;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .div__header {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .container_main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    height: 100%;
+  }
+
+  video {
+    width: 100%;
+    border-radius: 50px;
+    margin-top: 3rem;
+  }
+
+  .sauna_and_jacuzzi img {
+    max-width: 100%;
+    border-radius: 50px;
+    height: 100%;
+  }
+
+  .sauna_and_jacuzzi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: none;
+    max-width: 100%;
+  }
+
+  .jacuzzi,
+  .sauna {
+    margin: 1rem;
+  }
+
+  .info_pool {
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px 1px gray;
+    color: var(--text-light);
+    font-weight: bold;
+    font-size: 15px;
+    max-width: 100%;
+    margin: 10px;
+    padding: 1px;
+  }
+
+  .section__classes {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    overflow: none;
+  }
+
+  .sauna_and_jacuzzi {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .footer__container {
+    margin-top: 5rem;
+    grid-template-columns: 1fr 150px;
+  }
+
+  .footer__bar {
+    text-align: center;
+  }
+
+  footer p {
+    text-align: left;
+  }
+}
