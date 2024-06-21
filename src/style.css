@@ -250,6 +250,9 @@ b {
   margin-bottom: 4rem;
   color: var(--text-light);
 }
+.join__cntainer {
+  bottom: 1rem;
+}
 .join__image {
   margin-top: 4rem;
   position: relative;
@@ -295,28 +298,15 @@ b {
 .join__card p {
   color: var(--text-light);
 }
-
+.section__header h2 {
+  top: 2rem;
+}
 .price__grid {
   margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
 }
-
-.price__grid {
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;
-}
-
-.price__grid {
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;
-}
-
 .price__card {
   padding: 3rem 2rem;
   display: flex;
@@ -569,6 +559,7 @@ b {
   }
   .join__cntainer {
     margin-bottom: 15rem;
+    bottom: 1rem;
   }
   .join__grid {
     width: 100%;
@@ -654,6 +645,7 @@ b {
   padding: 1rem;
   font-size: 0.8rem;
   color: var(--white);
+  text-align: center;
 }
 
 @media (width < 900px) {
