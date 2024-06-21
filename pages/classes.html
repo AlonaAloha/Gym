@@ -10,12 +10,84 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="src/bmi.css" />
     <link rel="stylesheet" href="../src/classes.css" />
     <link rel="stylesheet" href="../src/join.css" />
     <link rel="stylesheet" href="../src/style.css" />
   </head>
 
   <body>
+    <nav>
+      <div class="nav__logo">
+        <a href="#"><img src="images/logo2.png" alt="logo" /></a>
+      </div>
+      <ul class="nav__links">
+        <li class="link"><a href="../index.html">Home</a></li>
+        <li class="link"><a href="../index/.#membership">Memberships</a></li>
+        <li class="link"><a href="./pages/classes.html">Classes</a></li>
+      </ul>
+      <button class="btnLogin-popup">Join Us</button>
+    </nav>
+    <div class="wrapper wrapper-alert">
+      <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+
+      <div class="form-box login">
+        <h2>Join</h2>
+        <form action="#">
+          <div class="wrapper-form">
+            <div>
+              <div class="input-box">
+                <span class="icon"
+                  ><ion-icon name="people-outline"></ion-icon
+                ></span>
+                <input type="text" required name="name" />
+                <label>Name</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="call"></ion-icon></span>
+                <input type="tel" required name="tel" pattern="[0-9]*" />
+                <label>Phone</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="id-card"></ion-icon></span>
+                <input type="text" required name="id-card" />
+                <label>Mobile</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required name="mail" />
+                <label>Email</label>
+              </div>
+            </div>
+
+            <div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="calendar"></ion-icon></span>
+                <input type="text" required name="calendar" />
+                <label>Age</label>
+              </div>
+              <div class="input-box">
+                <select required name="gender">
+                  <option value="" disabled selected>Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+
+                <span class="icon-box">
+                  <ion-icon name="transgender"></ion-icon
+                ></span>
+              </div>
+              <div class="input-box">
+                <span class="icon"><ion-icon name="briefcase"></ion-icon></span>
+                <input type="text" required name="staff" />
+                <label>Medical Condition</label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn-main">Submit</button>
+        </form>
+      </div>
+    </div>
     <main>
       <section class="section__classes">
         <div class="section__class__container">
@@ -35,7 +107,7 @@
           <div class="div__images">
             <div class="image_container tall">
               <img
-                src="images/pilates2.jpg"
+                src="../images/pilates2.jpg"
                 class="tall pilate"
                 alt="Pilates"
               />
@@ -45,7 +117,7 @@
               </div>
             </div>
             <div class="image_container small">
-              <img src="images/yoga.jpg" class="small yoga" alt="Yoga" />
+              <img src="../images/yoga.jpg" class="small yoga" alt="Yoga" />
               <div class="image_text">
                 <h3>Yoga</h3>
                 <p>
@@ -56,7 +128,7 @@
             </div>
             <div class="image_container small">
               <img
-                src="images/spinning.jpg"
+                src="../images/spinning.jpg"
                 class="small spinning"
                 alt="Spinning"
               />
@@ -72,7 +144,7 @@
       </section>
       <section>
         <div class="container_main">
-          <video autoplay loop src="images/swimmingPool.mp4"></video>
+          <video autoplay loop src="../images/swimmingPool.mp4"></video>
           <div class="info_pool">
             <h2>The Pool</h2>
             <p>
@@ -88,7 +160,7 @@
         <span class="bg__blur header__blur"></span>
         <div class="sauna_and_jacuzzi">
           <div class="container_main sauna">
-            <img src="images/sauna.jpg" alt="Sauna" />
+            <img src="../images/sauna.jpg" alt="Sauna" />
             <div class="info_pool">
               <h2>Sauna</h2>
               <p>
@@ -98,7 +170,7 @@
             </div>
           </div>
           <div class="container_main jacuzzi">
-            <img src="images/jacuzzi.jpg" alt="Jacuzzi" />
+            <img src="../images/jacuzzi.jpg" alt="Jacuzzi" />
             <div class="info_pool">
               <h2>Jacuzzi</h2>
               <p>
@@ -111,7 +183,7 @@
       </section>
       <section class="section__container">
         <div class="image-container">
-          <img src="images/weights3.jpg" alt="Description of the image" />
+          <img src="../images/weights3.jpg" alt="Description of the image" />
           <div class="text-overlay">
             <h2>Weights</h2>
             <p>Selection of free weights and fixed weights.</p>
@@ -124,7 +196,7 @@
       <span class="bg__blur footer__blur"></span>
       <div class="footer__col">
         <div class="footer__logo">
-          <a href="#"><img src="images/logo2.png" alt="logo" /></a>
+          <a href="#"><img src="../images/logo2.png" alt="logo" /></a>
         </div>
         <p>
           "Empowering You to Reach New Heights of Fitness, Health, and
@@ -132,9 +204,9 @@
           Towards Your Goals is Supported, Encouraged, and Celebrated!"
         </p>
         <div class="footer__socials">
-          <a href="#"><img src="images/facebook.png" alt="facebook" /></a>
-          <a href="#"><img src="images/youtube.png" alt="youtube" /></a>
-          <a href="#"><img src="images/instagram.png" alt="instagram" /></a>
+          <a href="#"><img src="../images/facebook.png" alt="facebook" /></a>
+          <a href="#"><img src="../images/youtube.png" alt="youtube" /></a>
+          <a href="#"><img src="../images/instagram.png" alt="instagram" /></a>
         </div>
       </div>
       <div class="footer__col">
@@ -161,6 +233,16 @@
     </footer>
 
     <div class="footer__bar">©Cork Gym Project 2024</div>
-    <script src="index.js"></script>
+    <script src="../js/js.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/bmi.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

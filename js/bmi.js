@@ -5,7 +5,7 @@ let male = document.getElementById("m");
 let female = document.getElementById("f");
 let form = document.getElementById("form");
 let resultArea = document.querySelector(".comment");
-
+let wrapperContainer = document.querySelector("#wrapper-container");
 /*function bmiLink() {
   let wrapperContainer = document.querySelector("#wrapper-container");
   if (wrapperContainer.style.display === "none") {
@@ -76,7 +76,9 @@ function countBmi() {
 span.onclick = function () {
   modal.style.display = "none";
 };
-
+span.onclick = function () {
+  wrapperContainer.style.display = "none";
+};
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {

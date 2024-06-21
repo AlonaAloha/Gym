@@ -212,6 +212,8 @@ nav {
 .explore__image:hover {
   background-color: var(--primary-color-extra-light);
   border-color: var(--secondary-color);
+  transform: translateY(-5%);
+  transition: 0.5s ease;
 }
 .explore__image p {
   margin-top: 1rem;
@@ -357,7 +359,7 @@ b {
 }
 
 .price__btn {
-  color: var(--secondary-color);
+  color: var(--secondary-color-dark);
   background-color: transparent;
   border: 3px solid var(--secondary-color);
 }
@@ -577,8 +579,8 @@ b {
 .footer__container {
   position: relative;
   display: grid;
-  grid-template-columns: 400px repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
 }
 
 .bg__blur {
@@ -594,8 +596,12 @@ b {
 .footer__logo {
   max-width: 50px;
   margin-bottom: 2rem;
+  text-align: center;
 }
-
+.footer__logo p .name {
+  color: #f9ac54;
+  text-align: center;
+}
 .footer__col p {
   margin-bottom: 2rem;
   color: var(--text-light);
@@ -604,7 +610,7 @@ b {
 .footer__socials {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .footer__socials a {
@@ -662,6 +668,6 @@ b {
   }
 
   .footer__bar {
-    text-align: left;
+    text-align: center;
   }
 }
